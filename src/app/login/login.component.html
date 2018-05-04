@@ -1,0 +1,79 @@
+<div class="login-wrapper ">
+  <!-- START Login Background Pic Wrapper-->
+  <div class="bg-pic">
+    <!-- START Background Pic-->
+    <img src="assets/img/Login.jpg" data-src="assets/img/Login.jpg" data-src-retina="assets/img/Login.jpg" alt="" class="lazy">
+    <!-- END Background Pic-->
+    <!-- START Background Caption-->
+    <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+      <h2 class="semi-bold text-white">
+      Sharing is Caring FPPSASS</h2>
+<!--			
+      <p class="small">
+        Automatically analyze web content to determine topic relevancy, identify topical gaps, and find new opportunities.
+      </p>
+-->  
+    </div>
+    <!-- END Background Caption-->
+  </div>
+  <!-- END Login Background Pic Wrapper-->
+  <!-- START Login Right Container-->
+  <div class="login-container bg-white" style="padding: 7%;"> 
+    <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+  
+      <img src="assets/img/fpp.svg" alt="logo" data-src="assets/img/fpp.svg" data-src-retina="assets/img/fpp.svg" width="78" height="22" style="width: 70px; height: 70px;">
+ 
+      <p class="p-t-35">Sign into FPPSASS</p>
+      <!-- START Login Form -->
+      <form id="form-login" class="p-t-15" >
+        <!-- START Form Control-->
+        <div class="form-group form-group-default">
+          <label>LOGIN</label>
+          <div class="controls">
+            <input  name="email" type="email"  tabindex="1" [(ngModel)]="username" class="form-control" placeholder="email" required="" autofocus="" value="" required>
+           </div>
+        </div>
+        <!-- END Form Control-->
+        <!-- START Form Control-->
+        <div class="form-group form-group-default">
+          <label>PASSWORD</label>
+          <div class="controls">
+            <input   name="password" [(ngModel)]="password" type="password" id="inputPassword" required="" tabindex="2" class="form-control" placeholder="Password">
+          </div>
+        </div>
+        <!-- START Form Control
+        <div class="row">
+          <div class="col-md-6 no-padding">
+            <div class="checkbox ">
+              <input type="checkbox" value="1" id="checkbox1">
+              <label for="checkbox1">Keep Me Signed in</label>
+            </div>
+          </div>
+          <div class="col-md-6 text-right">
+            <a routerLink="#" class="text-info small">Help? Contact Support</a>
+          </div>
+        </div>
+        END Form Control-->
+        <a  (click)="submitLogin()"  style="float:right" name="login-submit" id="login-submit"  tabindex="4" value="Sign In" class="btn btn-primary btn-cons m-t-10 bLogin">Sign in</a>
+      </form>
+      <!--END Login Form-->
+      <div class="pull-bottom sm-pull-bottom">
+        <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
+          <div class="col-sm-3 col-md-2 no-padding">
+            
+          </div>
+          <div class="col-sm-9 no-padding m-t-10">
+            <p>
+              <small>
+             Using FPPSASS keeping pets happy is easy! 
+            </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Login Right Container-->
+</div>
+
+

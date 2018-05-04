@@ -1,0 +1,59 @@
+<div class="jumbotron psln-container">
+  <div class="container">
+    <h1 class="display-4 psln-oracleText">Pets</h1>
+  </div>
+</div>
+<nav class="psln-navUsers">
+Dashboard / Pets
+</nav>
+<div class="container">
+<div class="col-sm-4">
+    <div class="container">
+       <br>
+        <p class="lead">Pets</p>
+        <div class="addPet"> 
+            <form>
+                <input type="search" name="busqueda" class="psln-btnPlace" placeholder="Search by Pet´s Name, ID,Microchip ID...">
+            </form>
+            <a routerLink="/newPet" class="btn btn-lg btn-block btn-default psln-btnNewPet">Add New Pet<img class="psln-imgAsset" src="assets/img/ADD.svg" width="45"></a>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"> 
+                <ul id="nav-tabs-wrapper" class="nav  nav-pills nav-stacked">
+                  <li><a class="psln-navUsersText">All</a></li> 
+                  <li><a class="psln-navUsersText2">Adoptables</a></li> 
+                  <li><a class="psln-navUsersText2">Medical Hold</a></li> 
+                  <li><a class="psln-navUsersText2">Sanctuary</a></li> 
+                  <li><a class="psln-navUsersText2">Adopted</a></li> 
+                  <li><a class="psln-navUsersText2">Trabsferred</a></li> 
+                  <li><a class="psln-navUsersText2">Euthanized</a></li> 
+                </ul>
+            </div> 
+        </div> 
+    </div>
+</div>
+<div class="psln-contentGeneral">
+<div class="col-sm-8" *ngFor="let pet of pets" style="    float: right;">
+    <div class="bs-calltoaction bs-calltoaction-default">
+        <div class="row">
+            <div class="profile-header-container" style="padding-top: 2%;">   
+                <div class="profile-header-img">
+                   <img class="img-circle" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" />
+                </div>
+            </div>
+            <div class="col-md-9 cta-contents">
+                <div class="cta-desc">
+                    <p><a class="sub-text">Name:</a>{{pet.name}}</p>
+                    <p><a class="sub-text">ID:</a>{{pet.uuid}}</p>
+                    <p><a class="sub-text">Status:</a>{{pet.status}}</p>
+                </div>
+            </div>
+            <div class="col-md-3 cta-button">
+                <a routerLink="#" class="btn btn-lg btn-block btn-default psln-btnUser" (click)="viewDetail(pet)">View Profile</a>
+                <a routerLink="#" class="btn btn-lg btn-block btn-default psln-btnActions">Actions</a>
+            </div>              
+         </div>
+    </div> 
+</div> 
+</div>
+</div>

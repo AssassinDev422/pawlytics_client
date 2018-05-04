@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse navbar-fixed-top psln-navbarTop" *ngIf="!isLogin">
+    <div class="container">
+      <div class="navbar-header psln-navHeader">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand psln-logo" routerLink=""></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse  psln-nav">
+        <div class="navbar navbar-right" style="width: 55%;">
+            <a class="psln-home" routerLink="/home">Home</a>
+            <a class="psln-contact" routerLink="/contact">Contact</a>
+            <a class="psln-tools" routerLink="/tools">Tools</a>
+            <a class="psln-users" routerLink="/user">Users</a>
+            <a routerLink="/Portal/Volunteer"><img class="psln-userInfo" src="http://www.pieglobal.com/wp-content/uploads/2015/10/placeholder-user.png"></a> 
+        </div>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>

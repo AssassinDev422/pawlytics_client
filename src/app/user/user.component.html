@@ -1,0 +1,53 @@
+<div class="jumbotron psln-container">
+    <div class="container">
+      <h1 class="display-4 psln-oracleText">Manage Users</h1>
+    </div>
+</div>
+<nav class="psln-navUsers">
+  Dashboard / Manage Users
+</nav>
+<div class="container">
+  <div class="col-sm-4">
+      <div class="container">
+         <br>
+          <p class="lead">Users Tipes</p>
+          <div class="addPet">  
+            <form>
+                <input type="search" name="busqueda" class="psln-btnPlace" placeholder="Search by Pet´s Name, ID,Microchip ID...">
+            </form>
+            <a routerLink="/newuser" class="btn btn-lg btn-block btn-default psln-btnNewPet">Add New <img class="psln-imgAsset" src="assets/img/ADD.svg" width="35"></a>
+          </div>
+          <div class="row">
+              <div class="col-sm-3"> 
+                  <ul id="nav-tabs-wrapper" class="nav  nav-pills nav-stacked">
+                    <li><a (click)="getUsers()" class="psln-navUsersText">Admins</a></li>
+                    <li><a (click)="getOrg()" class="psln-navUsersText2">Managers</a></li> 
+                  </ul>
+              </div> 
+          </div> 
+      </div>
+  </div>
+  <div class="col-sm-8" style="margin-top:11%;">
+      <div class="bs-calltoaction bs-calltoaction-default" *ngFor="let user of listUser">
+          <div class="row">
+              <div class="profile-header-container" style="padding-top: 15%;">   
+                  <div class="profile-header-img">
+                     <img class="img-circle" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" />
+                  </div>
+              </div>
+              <div class="col-md-9 cta-contents">
+                  <div class="cta-desc">
+                    <p><a class="sub-text">Name:</a>{{user.firstname}} {{user.lastname}}</p>
+                    <p><a class="sub-text">ID:</a>{{user.middlename}}</p>
+                    <p><a class="sub-text">Status:</a>{{user.type}}</p>
+                  </div>
+              </div>
+              <div class="col-md-3 cta-button">
+                  <a (click)="viewDetail(user)" class="btn btn-lg btn-block btn-default  psln-waitlist">Edit</a>
+                  <a routerLink="#" class="btn btn-lg btn-block btn-default psln-notes">Delete</a>
+                  <a routerLink="#" class="btn btn-lg btn-block btn-default psln-delete">Misk</a>
+              </div>              
+           </div>
+      </div> 
+  </div>
+</div>

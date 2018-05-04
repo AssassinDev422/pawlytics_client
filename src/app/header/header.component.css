@@ -1,0 +1,110 @@
+.psln-navbarTop{
+    background-color: #fff;
+    border-color: #fff;
+    height: 80px;
+}
+.psln-nav{
+    margin-top: 1%;
+}
+.psln-navHeader{
+    margin-top: 1%;
+}
+.psln-btn:hover{
+    color: #4E196E;
+}
+.psln-home:focus, .psln-home:hover , .psln-home:active{
+    border: 2px solid #4E196E;
+    color:#4E196E;
+} 
+.psln-contact:focus, .psln-contact:hover , .psln-contact:active{
+    border: 2px solid #2399A6;
+    color:#2399A6;
+} 
+.psln-tools:focus, .psln-tools:hover , .psln-tools:active{
+    border: 2px solid #B11C1C;
+    color:#B11C1C;
+} 
+.psln-users:focus, .psln-users:hover , .psln-users:active{
+    border: 2px solid #2121D2;
+    color:#2121D2;
+} 
+.psln-home{    
+   
+    padding-right: 15%;
+    font-size: 1.1em;
+    color: #8f908e;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    padding: 12px 33px;
+    width: 130px;
+    margin-bottom: 0;
+    text-decoration: none;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 31px;
+}
+.psln-contact{    
+    padding-right: 15%;
+    font-size: 1.1em;
+    color: #8f908e;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    padding: 12px 33px;
+    width: 130px;
+    margin-bottom: 0;
+    text-decoration: none;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 31px;
+}
+.psln-tools{    
+    padding-right: 15%;
+    font-size: 1.1em;
+    color: #8f908e;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    padding: 12px 33px;
+    width: 130px;
+    margin-bottom: 0;
+    text-decoration: none;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 31px;
+}
+.psln-users{ 
+    padding-right: 15%;
+    font-size: 1.1em;
+    color: #8f908e;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    padding: 12px 33px;
+    width: 130px;
+    margin-bottom: 0;
+    text-decoration: none;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 31px;
+}
+.psln-logo{
+    background-image: url('/assets/img/logoIcon.svg');background-repeat: no-repeat;background-size: cover ; 
+    width: 55px;
+    height: 55px;
+}
+.psln-userInfo{  
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}

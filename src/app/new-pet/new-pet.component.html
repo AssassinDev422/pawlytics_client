@@ -1,0 +1,209 @@
+<div class="jumbotron psln-container">
+  <div class="container">
+    <h1 class="display-4 psln-oracleText">New Pets</h1>
+  </div>
+</div>
+<nav class="psln-navUsers">
+Dashboard / New Pets
+</nav>
+<div class="container">
+<div class="col-sm-12 bs-calltoaction bs-calltoaction-default">
+      <form class="form-horizontal">
+              <fieldset> 
+              <!-- Text input-->
+              <div class="psln-threeCol">
+              <div class="form-group">
+                  <div class="col-sm-4">
+                      <img  class="psln-imgPet" src="http://www.pieglobal.com/wp-content/uploads/2015/10/placeholder-user.png">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Name</label>  
+                <div class="col-md-8">
+                <input id="name" name="name" type="text" [(ngModel)]="pet.name" placeholder="Name" class="form-control input-md">
+                  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="intake">Intake Date</label>  
+                <div class="col-md-8">
+                <input id="intake" name="intake" type="date" [(ngModel)]="pet.intakeDate" placeholder="Intake Date" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="age"> Age</label>  
+                <div class="col-md-8">
+                <input id="age" name="age" type="text" [(ngModel)]="pet.ageYears" placeholder="Age" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              <!-- Select input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Species">Species</label>
+                <div class="col-md-8">
+                  <select id="Species" name="Species" class="form-control" [(ngModel)]="pet.petSpecyId">
+                    <option *ngFor="let specie of petSpecies" value="{{specie.id}}">{{specie.name}}</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Select input-->
+              <div class="form-group">
+                  <label class="col-md-4 control-label" for="Breed">Breed</label>
+                  <div class="col-md-8">
+                    <select id="Breed" name="Breed" class="form-control" [(ngModel)]="pet.petBreedId">
+                      <option *ngFor="let breed of petBreed" value="{{breed.id}}">{{breed.name}}</option>
+                    </select>
+                  </div>
+              </div>                 
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Color">Color</label>  
+                <div class="col-md-8">
+                <input id="Color" name="Color" type="text" [(ngModel)]="pet.color" placeholder="Color" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="marking">Special Markings</label>  
+                <div class="col-md-8">
+                <input id="marking" name="marking" type="text" [(ngModel)]="pet.specialMarkings" placeholder="Special Markings" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Weight">Weight</label>  
+                <div class="col-md-8">
+                <input id="Weight" name="Weight" type="text" [(ngModel)]="pet.weight" placeholder="Weight" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Location">Location</label>  
+                <div class="col-md-8">
+                <input id="Location" name="Location" type="text" [(ngModel)]="pet.location" placeholder="Location" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Status">Status</label>  
+                <div class="col-md-8">
+                <select id="Status" name="Status" class="form-control" [(ngModel)]="pet.status">
+                    <option  value="Adoptables">Adoptables</option>
+                    <option  value="Medical Hold">Medical Hold</option>
+                    <option  value="Sanctuary">Sanctuary</option>
+                    <option  value="Adopted">Adopted</option>
+                    <option  value="Trabsferred">Trabsferred</option>
+                    <option  value="Euthanized">Euthanized</option>
+                </select>
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="date">Out of Date</label>  
+                <div class="col-md-8">
+                <input id="date" name="date" type="date" [(ngModel)]="pet.outOfDate" placeholder="Out of Date" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              </div>
+              <br>
+              <div class="col-md-12">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="Brand">Brand</label>  
+                <div class="col-md-8">
+                <input id="Brand" name="Brand" type="text" [(ngModel)]="pet.foodBrand" placeholder="Brand" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="much">How Much</label>  
+                <div class="col-md-8">
+                <input id="much" name="much" type="text" [(ngModel)]="pet.foodAmount" placeholder="How Much" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="often">How Often</label>  
+                <div class="col-md-8">
+                <input id="often" name="often" type="text" [(ngModel)]="pet.foodPerDay" placeholder="How Often" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="Instructions">Instructions</label>
+                <div class="col-md-8">                     
+                  <textarea class="form-control" id="Instructions" [(ngModel)]="pet.instructions" name="Instructions"> Description....</textarea>
+                </div>
+              </div>
+              
+              <!-- Multiple Radios (inline)  Organizar-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="radios">Special Needs</label>
+                <div class="col-md-8"> 
+                  <label class="radio-inline" for="radios-0">
+                    <input type="radio" name="radios" id="radios-0" value="" checked="checked">
+                    Yes
+                  </label> 
+                  <label class="radio-inline" for="radios-1">
+                    <input type="radio" name="radios" id="radios-1" value="">
+                    No
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="speneeds"> </label>
+                <div class="col-md-8">                     
+                  <textarea class="form-control" id="speneeds" [(ngModel)]="pet.textArea" name="speneeds">Description.... </textarea>
+                </div>
+              </div>
+              
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="Medical">Medical</label>
+                <div class="col-md-8">                     
+                  <textarea class="form-control" id="Medical" [(ngModel)]="pet.medical" name="Medical"> </textarea>
+                </div>
+              </div>
+              
+              <!-- Button (Double) -->
+              <div class="form-group"> 
+                <div class="col-md-12" align="center">
+                  <a id="button1id" name="button1id" (click)="createPet(pet)" class="btn btn-lg  btn-default psln-btnSave">Save</a>
+                  <a id="button2id" name="button2id" routerLink="/pets" class="btn btn-lg  btn-default psln-btnCancel">Cancel</a>
+                </div>
+              </div>
+              </div>
+              </fieldset>
+              </form>
+              
+</div>
+  <div class="col-md-12 psln-divFoot" align="center">
+      <a id="button1id" name="button1id" class="btn btn-lg  btn-default psln-btnFoot"><img src="assets/img/history.svg" width="25" height="25"> Documents</a>
+      <a id="button2id" name="button2id" class="btn btn-lg  btn-default psln-btnFoot"><img src="assets/img/notes.svg" width="25" height="25"> Notes</a>
+      <a id="button2id" name="button2id" class="btn btn-lg  btn-default psln-btnFoot"><img src="assets/img/history.svg" width="25" height="25"> History</a>
+  </div>
+</div>

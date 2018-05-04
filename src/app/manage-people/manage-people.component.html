@@ -1,0 +1,66 @@
+<div class="jumbotron psln-container">
+        <div class="container">
+          <h1 class="display-4 psln-oracleText">People Management</h1>
+        </div>
+      </div>
+      <nav class="psln-navUsers">
+      Dashboard / People Management
+      </nav>
+      <div class="container">
+      <div class="col-sm-4">
+          <div class="container">
+             <br>
+              <p class="lead">People Management</p>
+              <div class="addPet"> 
+                  <form>
+                      <input type="search" name="busqueda" class="psln-btnPlace" placeholder="Search..."> 
+                  </form> 
+              </div>
+              <div class="row">
+                  <div class="col-sm-3"> 
+                      <ul id="nav-tabs-wrapper" class="nav  nav-pills nav-stacked">
+                        <li><a (click)="listVolunteers()" class="psln-navUsersText">Volunteers</a></li> 
+                        <li><a class="psln-navUsersText2">Fosters</a></li> 
+                        <li><a (click)="listEmployees()"class="psln-navUsersText2">Employees</a></li>   
+                      </ul>
+                  </div> 
+              </div> 
+          </div>
+      </div>
+      <div class="psln-contentGeneral">
+      <div class="col-sm-8">
+          <div class="bs-calltoaction bs-calltoaction-default">
+                <div class="row">                        
+                        <div class="col-md-12"> 
+                        <div class="table-responsive">
+                              <table id="mytable" class="table table-bordred  ">                         
+                               <thead>
+                                <th> </th>
+                                <th>Bulk</th>
+                                <th>Name</th>
+                                <th>Date</th> 
+                                <th>Manage</th> 
+                               </thead>
+                <tbody>          
+                <tr *ngFor="let user of volunteers">
+                    <td></td>
+                    <td></td>
+                    <td>{{user.firstname}} {{user.lastname}}</td>
+                    <td>{{user.birthDate}}</td> 
+                    <td><a routerLink="#" class="btn btn-lg btn-block btn-default psln-waitlist">Waitlist</a></td>
+                    <td><a routerLink="#" class="btn btn-lg btn-block btn-default psln-notes">Notes</a></td>
+                    <td><a routerLink="#" class="btn btn-lg btn-block btn-default psln-delete">Delete</a></td>
+                </tr>                    
+                </tbody>
+                        
+                </table>
+                                
+                            </div>
+                            
+                        </div>
+                  </div>
+                 
+          </div> 
+      </div> 
+      </div>
+      </div>

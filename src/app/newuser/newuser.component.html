@@ -1,0 +1,87 @@
+<div class="jumbotron psln-container">
+  <div class="container">
+    <h1 class="display-4 psln-oracleText">New User</h1>
+  </div>
+</div>
+<nav class="psln-navUsers">
+Dashboard / New User
+</nav>
+<div class="container">
+<div class="col-sm-12 bs-calltoaction bs-calltoaction-default">
+      <form class="form-horizontal">
+              <fieldset> 
+              <!-- Text input--> 
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Firstname</label>  
+                <div class="col-md-8">
+                <input id="name" name="name" type="text" [(ngModel)]="user.firstname" placeholder="First Name" class="form-control input-md">
+                  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="last">Lastname</label>  
+                <div class="col-md-8">
+                <input id="last" name="last" type="text"  [(ngModel)]="user.lastname" placeholder="Last Name" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="middle"> Middle Name</label>  
+                <div class="col-md-8">
+                <input id="middle" name="middle" type="text" [(ngModel)]="user.middlename" placeholder="Middle Name" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              <!-- Select input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="birth">Birth Date</label>
+                <div class="col-md-8"> 
+                  <input id="birth" name="birth" type="date" [(ngModel)]="user.birthDate" placeholder="Birth Date" class="form-control input-md">
+
+                </div>
+              </div>
+              <!-- Select input-->
+              <div class="form-group">
+                  <label class="col-md-4 control-label" for="email">Email</label>
+                  <div class="col-md-8">
+                      <input id="email" name="email" type="email" [(ngModel)]="user.email" placeholder="Email" class="form-control input-md">    
+                  </div>
+              </div>                 
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="phone">Phone</label>  
+                <div class="col-md-8">
+                <input id="phone" name="phone" type="number" [(ngModel)]="user.phone" placeholder="Phone" class="form-control input-md">
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="type">Type</label>  
+                <div class="col-md-8">
+                    <select id="type" name="type" class="form-control" [(ngModel)]="user.type">
+                        <option  value="volunteer">volunteer</option>
+                        <option  value="employee">employee</option>
+                        <option  value="user">user</option>
+                    </select>
+                <span class="help-block"> </span>  
+                </div>
+              </div>
+        
+              <!-- Button (Double) -->
+              <div class="form-group"> 
+                <div class="col-md-12" align="center">
+                  <a id="button1id" name="button1id" (click)="createPJ(user)" class="btn btn-lg  btn-default psln-btnSave">Save</a>
+                  <a id="button2id" name="button2id" routerLink="/employee" class="btn btn-lg  btn-default psln-btnCancel">Cancel</a>
+                </div>
+              </div> 
+              </fieldset>
+              </form>
+              
+</div> 
+</div>

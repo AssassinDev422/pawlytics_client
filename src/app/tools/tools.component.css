@@ -1,0 +1,62 @@
+.psln-container{
+    background-image: url('/assets/img/headerImage.jpg');background-repeat: no-repeat;background-size: cover ; 
+    padding-top: 175px;
+    padding-bottom: 170px;
+}
+.psln-containerBottom{
+    background-image: url('/assets/img/bannerBottom.jpg');background-repeat: no-repeat;background-size: cover ; 
+    padding-top: 175px;
+    padding-bottom: 170px;
+    margin-bottom: 0%;
+    margin-top:12%;
+}
+.psln-gallery_product
+{
+    margin-bottom: 30px;
+    padding-right: 9%;
+}
+.psln-text{
+    font-size: 1.2em;
+    color: #8f908e;
+    font-family: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+#psln-panel{
+    width: 75%;
+    float: right;
+}
+#psln-panelBody{
+    border-radius: 15px;
+    z-index: 99999;
+    position: relative;
+}
+.psln-oracleText{
+    float: right;
+    margin-right: 36%;
+    color: white;
+}
+.psln-textBot{
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+
+.psln-btnContact{ 
+    position: relative; 
+    margin-left: 40%;
+    top: 90px;
+    font-size: 1.8em;
+    color: #fff;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    padding: 12px 33px;
+    width: 205px; 
+    text-decoration: none;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 9px;
+    border: 3px solid;
+}
